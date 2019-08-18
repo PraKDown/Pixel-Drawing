@@ -1,0 +1,90 @@
+button.btn {
+  background-position: center;
+  background-size: contain;
+  height: 50px;
+  border: 2px solid #4388B9;
+}
+
+button.btn:hover {
+  border-color: white;
+}
+
+.pencil {
+  background: #2B5278 url('https://img.icons8.com/windows/96/000000/pencil.png') no-repeat;
+}
+
+.bucket {
+  background: #2B5278 url('https://img.icons8.com/windows/96/000000/fill-color.png') no-repeat;
+}
+
+.rect {
+  background: #2B5278 url('https://img.icons8.com/windows/96/000000/rectangle-stroked.png') no-repeat;
+}
+
+.circle {
+  background: #2B5278 url('https://img.icons8.com/material-sharp/96/000000/circled.png') no-repeat;
+}
+
+.choose {
+  background: #2B5278 url('https://img.icons8.com/cotton/64/000000/color-palette.png') no-repeat;
+}
+
+.line {
+  background: #2B5278 url('https://img.icons8.com/android/96/000000/line.png') no-repeat;
+}
+
+.clear {
+  background: #2B5278 url('https://img.icons8.com/ios/100/000000/eraser.png') no-repeat;
+}
+
+.size {
+  background: #2B5278 url('https://img.icons8.com/ios/100/000000/thumbnails-filled.png') no-repeat;
+  color: rgb(211, 219, 255);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lighten {
+  background: #2B5278 url('https://img.icons8.com/ios/100/000000/flash-light.png') no-repeat;
+}
+
+.dithering {
+  background: #2B5278 url('https://img.icons8.com/ios/100/000000/snap-background-to-white-filled.png') no-repeat;
+}
+
+.picker {
+  background: #2B5278 url('https://img.icons8.com/ios/100/000000/color-dropper-filled.png') no-repeat;
+}
+
+div.colors > div {
+  height: 25px;
+  border: 1px solid #4388B9;
+  border-radius: 10%;
+}
+
+div.sizes button {
+  height: 30px;
+  border: 1px solid #2B5278;
+  border-radius: 10%;
+  color: rgb(211, 219, 255);
+  font-size: 16px;
+  text-align: center;
+  background-color: #4388B9;
+}
+
+button.keys {
+  border: 1px solid #4388B9;
+  margin-bottom: 10%;
+  background: #2B5278 url('https://img.icons8.com/ios/100/000000/keyboard-filled.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+button.keys:hover {
+  border-color: white;
+}
+
+ng-color-circle {
+  height: 130px;
+  border-radius: 100%;
+}

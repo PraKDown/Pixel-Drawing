@@ -1,0 +1,5 @@
+<div>
+  <canvas [attr.height]="drawData.size" [attr.width]="drawData.size" #backgroundCanvas></canvas>
+  <canvas [attr.height]="drawData.size" [attr.width]="drawData.size" (mousedown)="startDraw($event)" (mouseup)="endDraw()" (mousemove)="draw($event)" #canvas></canvas>
+  <p class="col-1">{{currentPosition}}</p>
+</div>

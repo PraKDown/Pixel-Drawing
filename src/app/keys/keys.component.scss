@@ -1,0 +1,64 @@
+table {
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
+th {
+  color: #4388B9;
+  text-align: center;
+}
+
+td {
+  color: white;
+  text-align: center;
+}
+
+tr > td:nth-child(3):hover {
+  background-color: #4388B9;
+  // transform: scale(1.2);
+} 
+
+td.pen {
+  background: url('https://img.icons8.com/windows/96/000000/pencil.png') no-repeat;
+}
+
+td.line {
+  background: url('https://img.icons8.com/android/96/000000/line.png') no-repeat;
+}
+
+td.rect {
+  background: url('https://img.icons8.com/windows/96/000000/rectangle-stroked.png') no-repeat;
+}
+
+td.circle {
+  background: url('https://img.icons8.com/material-sharp/96/000000/circled.png') no-repeat;
+}
+
+td.picker {
+  background: url('https://img.icons8.com/ios/100/000000/color-dropper-filled.png') no-repeat;
+}
+
+td.eraser {
+  background: url('https://img.icons8.com/ios/100/000000/eraser.png') no-repeat;
+}
+
+td.size {
+  background: url('https://img.icons8.com/ios/100/000000/thumbnails-filled.png') no-repeat;
+}
+
+td.lighten {
+  background: url('https://img.icons8.com/ios/100/000000/flash-light.png') no-repeat;
+}
+
+td.dithering {
+  background: url('https://img.icons8.com/ios/100/000000/snap-background-to-white-filled.png') no-repeat;
+}
+
+td.bucket {
+  background: url('https://img.icons8.com/windows/96/000000/fill-color.png') no-repeat;
+}
+
+td.icon {
+  background-position: 50% 0;
+  background-size: contain;
+}

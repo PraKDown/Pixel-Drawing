@@ -1,0 +1,26 @@
+<div class="row justify-content-center align-content-between p-0 ml-2" style="height: 100%;">
+  <div class="col-12 p-0 row align-content-between justify-content-center" style="height: 70%;">
+    <div class="row justify-content-center p-0">
+      <button class="pencil btn col-6" title="Pen" (click)="setTool('pen')" [style.backgroundColor]="drawData.tool === 'pen' ? 'white' : '#2B5278'"></button>
+      <button class="line btn col-6" title="Line" (click)="setTool('line')" [style.backgroundColor]="drawData.tool === 'line' ? 'white' : '#2B5278'"></button>
+      <button class="rect btn col-6" title="Rect" (click)="setTool('rect')" [style.backgroundColor]="drawData.tool === 'rect' ? 'white' : '#2B5278'"></button>
+      <button class="circle btn col-6" title="Circle" (click)="setTool('circle')" [style.backgroundColor]="drawData.tool === 'circle' ? 'white' : '#2B5278'"></button>
+      <button class="bucket btn col-6" title="Bucket" (click)="setTool('bucket')" [style.backgroundColor]="drawData.tool === 'bucket' ? 'white' : '#2B5278'"></button>
+      <button class="clear btn col-6" title="Eraser" (click)="setTool('clear')" [style.backgroundColor]="drawData.tool === 'clear' ? 'white' : '#2B5278'"></button>
+      <button class="lighten btn col-6" title="Lighten" (click)="setTool('lighten')" [style.backgroundColor]="drawData.tool === 'lighten' ? 'white' : '#2B5278'"></button>
+      <button class="dithering btn col-6" title="Dithering" (click)="setTool('dithering')" [style.backgroundColor]="drawData.tool === 'dithering' ? 'white' : '#2B5278'"></button>
+      <button class="picker btn col-6" title="Picker" (click)="setTool('picker')" [style.backgroundColor]="drawData.tool === 'picker' ? 'white' : '#2B5278'"></button>
+      <button class="size btn col-6 p-0" title="Size" (click)="showChoose('size')">{{drawData.size}}</button>
+      <div class="col-12 row p-0 justify-content-center sizes" *ngIf="choose === 'size'">
+        <button class="col-4 p-0" (click)="setSize(32)">32</button>
+        <button class="col-4 p-0" (click)="setSize(64)">64</button>
+        <button class="col-4 p-0" (click)="setSize(128)">128</button>
+      </div>
+    </div>
+    <ng-color-circle [style.backgroundColor]="drawData.color.string" [(ngModel)]="color"
+      (ngModelChange)="setColor($event)" startHex="000000" [style.width.px]="drawData.maxHeight * 0.15" [style.height.px]="drawData.maxHeight * 0.15"></ng-color-circle>
+  </div>
+  <div class="col-12 row justify-content-center">
+    <button mat-fab class="keys" (click)="showKeys()"></button>
+  </div>
+</div>

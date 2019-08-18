@@ -1,0 +1,61 @@
+<table class="table table-striped table-dark">
+    <thead class=".thead-dark">
+      <tr>
+        <th scope="col">Icon</th>
+        <th scope="col">Action</th>
+        <th scope="col">Key</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="icon pen"></td>
+        <td>Pen</td>
+        <td class="key" (click)="startChangeKey('pen')">{{drawData.keys.pen[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon line"></td>
+        <td>Line</td>
+        <td  class="key" (click)="startChangeKey('line')">{{drawData.keys.line[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon rect"></td>
+        <td>Rect</td>
+        <td class="key" (click)="startChangeKey('rect')">{{drawData.keys.rect[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon circle"></td>
+        <td>Circle</td>
+        <td class="key" (click)="startChangeKey('circle')">{{drawData.keys.circle[0]}}</td>
+        </tr>
+      <tr>
+        <td class="icon bucket"></td>
+        <td>Bucket</td>
+        <td class="key" (click)="startChangeKey('bucket')">{{drawData.keys.bucket[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon eraser"></td>
+        <td>Eraser</td>
+        <td class="key" (click)="startChangeKey('eraser')">{{drawData.keys.eraser[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon lighten"></td>
+        <td>Lighten</td>
+        <td class="key" (click)="startChangeKey('lighten')">{{drawData.keys.lighten[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon dithering"></td>
+        <td>Dithering</td>
+        <td class="key" (click)="startChangeKey('dithering')">{{drawData.keys.dithering[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon picker"></td>
+        <td>Picker</td>
+        <td class="key" (click)="startChangeKey('picker')">{{drawData.keys.picker[0]}}</td>
+      </tr>
+      <tr>
+        <td class="icon size"></td>
+        <td>Size</td>
+        <td class="key" (click)="startChangeKey('size')">{{drawData.keys.size[0]}}</td>
+      </tr>
+    </tbody>
+  </table>

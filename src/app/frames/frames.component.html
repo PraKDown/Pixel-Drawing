@@ -1,0 +1,14 @@
+<div class="wrapper row justify-content-center" [style.maxHeight.px]="drawData.maxHeight">
+  <div class="row justify-content-center frames" cdkDropList (cdkDropListDropped)="drop($event)" #frames>
+    <div *ngFor="let item of drawData.dataFrames; let i = index" cdkDrag cdkDragLockAxis="y"
+    cdkDragBoundary=".frames" class="col-8 mt-2 frame">
+      <canvas [attr.height]="drawData.size" [attr.width]="drawData.size" (click)="changeFrame(i)"
+      [style.borderColor]="i === numberCurrentCanvas ? 'white' : '#4388B9'"></canvas>
+      <div class="col-2 number p-0">{{i + 1}}</div>
+      <button *ngIf="drawData.dataFrames.length !== 1" class="col-2 delete" (click)="deleteFrame(i)"></button>
+      <button class="col-2 copy" (click)="copyFrame(i)"></button>
+      <div [style.display]="drawData.dataFrames.length !== 1 ? 'block' : 'none'" class="col-2 move" cdkDragHandle></div>
+    </div>
+  </div>
+  <button class="col-3 add mt-2" (click)="addFrame(undefined)"></button>
+</div>

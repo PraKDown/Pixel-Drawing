@@ -1,0 +1,21 @@
+<header><h1>Pixel Drawing</h1></header>
+<main class="row justify-content-around p-0 pl-4 pr-4">
+  <section *ngIf="drawData.landingPage" class="col-10 p-0 m-0">
+      <app-landing-page></app-landing-page>
+  </section>
+  <section *ngIf="!drawData.landingPage" class="col-1 p-0 mt-5">
+    <app-instruments></app-instruments>
+  </section>
+  <section *ngIf="!drawData.landingPage" class="col-2 p-0">
+    <app-frames></app-frames>
+  </section>
+  <section *ngIf="!drawData.landingPage" class="col-6 p-0">
+    <app-canvas></app-canvas>
+  </section>
+  <section *ngIf="!drawData.landingPage" class="col-2 p-0">
+    <app-review></app-review>
+  </section>
+</main>
+<footer><h3>Vyacheslav Tkachev</h3></footer>
+<app-keys [@showKeys]="drawData.keysPage" *ngIf="!drawData.landingPage" class="col-4"></app-keys>
+

@@ -1,0 +1,80 @@
+div {
+  font-family: 'Concert One', cursive;
+}
+
+div.landingPage {
+  color: white;
+  height: 100%;
+}
+
+div.functional > div {
+  border-radius: 1%;
+  border: 10px solid #2B5278;
+  background-color: #4388B9;
+}
+
+div.functional img {
+  height: 200px;
+  border-radius: 2%;
+  border: 5px solid #17212B;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 24px;
+}
+
+button.create {
+  height: 70px;
+  font-size: 40px;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.example img {
+  border: 3px solid #2B5278;
+  margin: 0 2%;
+}
+
+button.author {
+  width: 350px;
+  background-image: url('https://img.icons8.com/ios/100/000000/github-filled.png');
+  background-repeat: no-repeat;
+  text-align: end;
+  background-size: contain;
+}
+
+.example h2 {
+  color: #4388B9;
+}
+
+@media (max-width: 1367px) {
+
+
+  div.functional {
+    h3 {
+      font-size: 20px;
+    }
+
+    img {
+      height: 140px;
+    }
+  }
+
+  button.create {
+    height: 50px;
+    font-size: 26px;
+  }
+
+  button.author {
+    height: 40px;
+  }
+}

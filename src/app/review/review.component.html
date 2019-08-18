@@ -1,0 +1,27 @@
+<div style="position: relative;" class="mt-2 row justify-content-center">
+  <canvas [attr.height]="drawData.size" [attr.width]="drawData.size"
+   #canvas></canvas>
+  <button (click)="fullscreen()" class="col-2 full"></button>
+  <mat-slider thumbLabel tickInterval="1"
+  min="1" max="24" (change)="animate($event.value)" style="width: 100%"></mat-slider>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+          Save as .gif
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="form col-12 p-0 row justify-content-between align-items-center">
+        <div class="col-7" style="overflow: hidden;">
+          <mat-form-field>
+            <input matInput type="number" (input)="setWidth($event)" placeholder="Width" value="1000" style="color: white">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput type="number" (input)="setHeight($event)" placeholder="Height" value="1000" style="color: white">
+          </mat-form-field>
+        </div>
+        <button (click)="save()" class="col-2 save"></button>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

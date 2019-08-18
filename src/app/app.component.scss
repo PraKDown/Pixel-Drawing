@@ -1,0 +1,34 @@
+header {
+  height: 50px;
+  background-color: #4388B9;
+  padding-left: 5%;
+}
+
+main {
+  flex: 1 0 auto;
+  background-color: #17212B;
+  overflow: hidden;
+}
+
+footer {
+  height: 20px;
+  background-color: #4388B9;
+}
+
+h1, h3 {
+  font-family: 'Concert One', cursive;
+}
+
+h3 {
+  font-size: 16px;
+  padding-left: 10%;
+}
+
+h3::before {
+  content: "©";
+}
+
+app-keys {
+  position: absolute;
+  left: 33%;
+}
